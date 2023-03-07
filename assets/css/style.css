@@ -1,0 +1,406 @@
+@font-face {
+    font-family: 'WorkSans';
+    src: url("../fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url("../fonts/Lora-VariableFont_wght.ttf")
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'WorkSans';
+    font-weight: 600;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #000;
+    height: 100vh;
+}
+
+#line{
+    width: 5px;
+    height: 25%;
+    position: absolute;
+    margin: 0 50%auto;
+}
+
+header .startPage{
+    color: #fff;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 15vh;
+}
+
+header .startPage h1{
+    font-family: 'Lora';
+    font-size: 8.8rem;
+    line-height: 7rem;
+}
+
+header .startPage h1:nth-of-type(1){
+    padding-top: 2rem ;
+}
+
+header .startPage h1:nth-of-type(2){
+    padding-bottom: 2rem ;
+    color:#000;
+    text-shadow: 1px  1px 1px #fff,
+    1px -1px 1px #fff,
+    -1px  1px 1px #fff,
+    -1px -1px 1px #fff;
+}
+
+header .RSVP{
+    margin: 0 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .RSVP a {
+    background-color: #000;
+    border: 1px solid #fff;
+    padding: 1.4rem 3.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+header .RSVP a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.lastYear{
+    background-color: #000;
+    color:#fff;
+    position: relative;
+}
+
+.lastYear > p:nth-of-type(1){
+    padding: 5% 19% 5% 7%;
+    font-family: 'Lora';
+    font-weight: 600;
+    font-size: 8.8rem;
+    position: relative;
+    z-index: 1;
+}
+
+.lastYear img{
+    position: absolute;
+    z-index:auto;
+    width:47%;
+    right: 0;
+    top: 41%;
+    padding-right: 3%;
+}
+
+.lastYear article{
+    padding-left: 7%;
+    padding-top: 7%;
+}
+
+.lastYear .description{
+    font-size: 1.6rem;
+}
+
+.lastYear .number{
+    font-family: 'Lora';
+    font-weight: 600;
+    font-size: 6.4rem;
+    padding-bottom: 10%;
+}
+
+h2{
+    font-size: 8.8rem;
+    font-family: 'Lora'; 
+    font-weight: 600;
+    line-height: 7rem;
+}
+
+.stuckInMiddle #action1{
+    width: 23%;
+    transform: translate(60vw, -40%);
+}
+
+.stuckInMiddle #action2{
+    width: 18%;
+    transform: translate(-100%, 18vh);
+}
+
+.stuckInMiddle article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 17vh 33vw 0 33vw ;
+}
+
+.stuckInMiddle > article:nth-of-type(1) p{
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    padding-top: 4.5%;
+}
+
+.stuckInMiddle #action3{
+    width: 20%;
+    transform: translate(80vw, -45%);
+}
+
+.stuckInMiddle #action4{
+    width: 23%;
+    transform: translate(-13%, 28vh);
+}
+
+.stuckInMiddle #action5{
+    width: 23%;
+    transform: translate(70%, 40vh);
+}
+
+.stuckInMiddle > article:nth-of-type(2) p{
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    padding-top: 45vh;
+}
+
+.stuckInMiddle #action6{
+    width: 20%;
+    transform: translateY(-38vh);
+}
+
+.stuckInMiddle #action7{
+    width: 23%;
+    transform: translate(36vw, 40%);
+}
+
+.goldenBear{
+    background-color: #000;
+    color: white;
+    padding: 30vh 0 2% 7%;
+    margin-bottom: -3%;
+    overflow: visible;
+}
+
+.gridBear{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-row: min-content min-content 4rem;
+    gap: 5% 5%;
+}
+
+.num{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    font-family: 'WorkSans';
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding-bottom: 5%;
+}
+
+.headline{
+    grid-column:1/2 ;
+    grid-row: 2/3;
+
+    width: 12%;
+}
+
+.text{
+    grid-column:2/3 ;
+    grid-row: 1/3;
+    width: 80%;
+
+    font-family: 'Lora';
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+}
+
+.author{
+    grid-column:2/3 ;
+    grid-row: 3/4;
+
+    font-family: 'WorkSans';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 3.2rem;
+}
+
+#bigPic{
+    width: 60%;
+    transform: translate(10%, 10%);
+    z-index: 6;
+    position: relative;
+}   
+
+#smallPic{
+    width: 35%;
+    transform: translate(0,0);
+    z-index: 8;
+    overflow: visible;
+    position: relative;
+}
+
+.poppyBear{
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 17% 7%;
+    z-index: 5;
+}
+
+.poppyBear div{
+    overflow: hidden;
+    margin-left: 75vw;
+    margin-top: -10%;
+}
+
+#circle{
+    overflow: hidden;
+    width: 180%;
+    animation-name: rotate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+} 
+
+#smallPic2{
+    width: 35%;
+    transform: translate(-160%, 4%);
+}
+#bigPic2{
+    width: 60%;
+    transform: translate(55%,15%);
+}  
+
+.joinUs{
+    background-color:#000;
+    color: #fff;
+    padding: 7% 57% 5% 7%;
+    position:relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.joinUs p:nth-of-type(1){
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding-bottom: 10%;
+}
+
+.joinUs p:nth-of-type(2){
+    font-family: 'Lora';
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    padding-bottom: 10%;
+}
+
+.joinUs a {
+    background-color: #000;
+    border: 1px solid #fff;
+    padding: 1.4rem 3.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.joinUs a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#banner{
+    position: absolute;
+    font-family: 'Lora';
+    font-weight: 600;
+    font-size: 8.8rem;
+    line-height: 7rem;
+    transform: rotate(45deg);
+    background-color: #fff;
+    transform-origin: top right;
+    right: -5vw;
+    padding: 0 5vw;
+    z-index: 2;
+    overflow: hidden;
+}
+
+#banner p span{
+    color:#fff;
+    text-shadow: 1px  1px 1px #000,
+    1px -1px 1px #000,
+    -1px  1px 1px #000,
+    -1px -1px 1px #000;
+}
+
+#banner p{
+    line-height: 10rem;
+    animation: bannerSlider 6s linear infinite;
+    }
+
+    @keyframes bannerSlider {
+        from {
+        -webkit-transform: translateX(120rem);
+        transform: translateX(120rem);
+        }
+        to {
+        -webkit-transform: translateX(-60rem);
+        transform: translateX(-60rem);
+        }
+    }
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 2% 7% 4% 7% ; 
+    display:flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+footer img{
+    width:20%
+}
+
+footer section:nth-of-type(1){
+    line-height: 5rem;
+}
+
+footer section:nth-of-type(1) img{
+    padding-right: 2rem;
+}
+
+footer section:nth-of-type(1) p{
+    font-size: 1.6rem;
+}
+
+footer section:nth-of-type(2){
+    text-align: end;
+    align-self: center;
+}
